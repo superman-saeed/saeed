@@ -1,7 +1,7 @@
 body{
 	margin:0px;
 	padding:20px;
-	background-color:rebeccapurple;
+	background-color:#136;
 	
 }
 .desc{
@@ -45,7 +45,7 @@ article p{
 	article h1{
 	font-size:8vw;
 	margin-bottom:0px;
-	
+	font-family: console;
 }
 article p{
 	font-size:2.5vw;
@@ -73,7 +73,7 @@ article p{
 	
 	.connect a{
 	text-decoration: none;
-	color:black;
+	color:#135;
 	font-size: 18px;	
 	font-family:arial;
 	margin: 0px;	
