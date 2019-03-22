@@ -1,87 +1,78 @@
 body{
-	margin:0px;
-	padding:20px;
-	background-color:#136;
-	
+	margin: 0;
+  background-color: black;
+}
+
+.container{
+	display: grid;
+  width: 400px;
+	margin: auto;
+
+
 }
 .desc{
-	text-align:center;
-	color:white;
-	
-}
-article h1{
-	font-size:12.5vw;
-	margin-bottom:0px;
-	
-}
-article p{
-	font-size:4vw;
-	margin-top:0px;
-	line-height:0.5px;
-	word-spacing:3vw;
-	letter-spacing:4px;
-	font-family:arial;
-}
-.connect{
-	
-}
-.connect ul{
-	margin-top: 0px; 
-	padding:5px 0px;
 	text-align: center;
-	background-color: white;
 }
-.connect li{
-	list-style-type: none;
-	
-}
-.connect a{
-	text-decoration: none;
-	font-size: 4vw; 
-	font-family:arial;
-	
-}
-@media (min-width:600px){
-	article h1{
-	font-size:8vw;
-	margin-bottom:0px;
-	font-family: console;
-}
-article p{
-	font-size:2.5vw;
-	margin-top:0px;
-	line-height:0.5px;
-	word-spacing:3vw;
-	letter-spacing:4px;
-	font-family:arial;
-}
-	
-	.connect ul{
-		margin: 0px; 
-		padding:0px;
-		text-align: center;
-		background-color: white;
-		
-		 
+.desc h2{
+	font-family:monospace;
+	color: blue;
+	line-height: 3px;
+	font-size: 25px;
 
-	}
-	.connect li{
-	   display: inline-block;
-		 
-		  
-   }
-	
-	.connect a{
+}
+.desc span{
+	font-family:monospace;
+	color: grey;
+	line-height: 3px;
+	font-size: 15px;
+	font-style: italic;
+}
+.list ul{
+	list-style-type: none;
+	padding: 15px;
+}
+.list a{
 	text-decoration: none;
-	color:#135;
-	font-size: 18px;	
-	font-family:arial;
-	margin: 0px;	
-	padding: 5px 20px; 	
-	display:block	
-  }
+	text-transform: uppercase;
+	font-family: 'Acme', sans-serif;
+	color: #76ea65;
+
+}
+.list a:visited{
+	color: #76ea65;
+
+}
+.list a:hover{
+	color: #ea6565;
+
+}
+.terminal{
+	color:grey;
+	padding: 10px;
+}
+.summary{
+	margin-top: 5px;
+	color: #0000ff;
+	margin-left: 30px;
 	
-	a:hover{
-		background-color: palegreen;
-	}
+	font-family: arial;
+
+}
+li i{
+	float: right;
+	color: #76ea65;
+}
+.summary img::after{
+	clear: both;
+}
+footer{
+	text-align: center;
+	color: #76ea65;
+}
+footer a{
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'Acme', sans-serif;
+
+
 }
