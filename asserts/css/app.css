@@ -145,7 +145,7 @@ body{
   padding: 0px;
   z-index: 1;
   overflow: hidden;
-  transition: width 1s;
+  transition: width .7s;
 }
 
   .content{

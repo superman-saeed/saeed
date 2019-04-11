@@ -1,14 +1,12 @@
-var nav = document.querySelectorAll("a"),
+var nav = document.querySelectorAll(".next a"),
 close = document.querySelector(".closebtn"),
-content= document.querySelector(".content"),
-navScreen = document.querySelector(".nav")
-
+navScreen = document.querySelector(".nav");
+var num = 0;
 
 navSelection(nav);
 closeNav(close);
 
 function navSelection(element){
-  var num = 0;
   element.forEach(function(li,key){
     li.addEventListener("click",function(e){
       e.preventDefault();
@@ -28,7 +26,6 @@ function closeNav(element){
   element.addEventListener("click", function(){
     console.log("close");
     navScreen.style.width ="0";
-    content.style.display ="block";
 
   })
 }
