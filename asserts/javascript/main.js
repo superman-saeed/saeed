@@ -1,5 +1,7 @@
-var nav = document.querySelectorAll("a");
-var close = document.querySelector("h3");
+var nav = document.querySelectorAll("a"),
+close = document.querySelector(".closebtn"),
+content= document.querySelector(".content"),
+navScreen = document.querySelector(".nav")
 
 
 navSelection(nav);
@@ -14,7 +16,6 @@ function navSelection(element){
         element[num].classList.remove("cliked");
         num =key;
       }
-
       li.classList.add("cliked");
 
 
@@ -26,5 +27,8 @@ function navSelection(element){
 function closeNav(element){
   element.addEventListener("click", function(){
     console.log("close");
+    navScreen.style.width ="0";
+    content.style.display ="block";
+
   })
 }
