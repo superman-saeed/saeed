@@ -2,7 +2,7 @@
 var navButtons = document.querySelectorAll(".next a"),
 close = document.querySelector(".closebtn"),
 navScreen = document.querySelector(".nav"),
-showNav = document.querySelector(".open");
+showNav = document.querySelector(".openbtn");
 var highlight = 0;
 
 navSelection(navButtons,navScreen);
