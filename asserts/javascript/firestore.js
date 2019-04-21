@@ -10,46 +10,8 @@ projects =[];
   };
   firebase.initializeApp(config);
 
-var database = firebase.firestore(),
-dataTable = [];
-// var collection = database.collection("portfolio");
-// data =[
-//   {
-//   name:"Tax Calculator",
-//   url:"https://superman-saeed.github.io/tax-calculator",
-//   description:"A Pay-As-You-Earn Tax calculator for people in Ghana. It calculates SSNIT and tax contribution. Tax Calcator is built with ReactJs",
-//   status:"completed"
-//
-//
-//   },
-//   {
-//   name:"Instagram Demo",
-//   url:"https://instagram-demo-1.firebaseapp.com",
-//   description:"A ReactJs demo of Instagram app without using any css frameworks. App is still  is in progress",
-//   status:"not completed"
-//
-//
-//   },
-//   {
-//   name:"Stop Clock",
-//   url:"https://instagram-demo-1.firebaseapp.com",
-//   description:"A ReactJs demo of stop clock app. ",
-//   status:"not completed"
-//
-//
-//   }
-//
-// ];
-//
-//
-// post(database, collection ,data);
-// function post(db, collection, dataArray){
-//    dataArray.forEach(function(item,index){
-//         collection.doc(item.name).set(item);
-//         console.log(index);
-//    });
-//
-//  }
+var database = firebase.firestore();
+
 getData(database,"portfolio");
 // getData(database,"skills");
 // getData(database,"about");

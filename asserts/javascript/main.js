@@ -3,6 +3,7 @@ var navButtons = document.querySelectorAll(".next a"),
 close = document.querySelector(".closebtn"),
 navScreen = document.querySelector(".nav"),
 showNav = document.querySelector(".openbtn"),
+loading = document.querySelector(".load"),
 portfolio = document.querySelector(".card-parent");
 
 
@@ -49,6 +50,7 @@ function card(parent,title,description, url){
   desc(title,description,url).forEach(function(x){
   div.appendChild(x);
   });
+  loading.style.display ="none";
   parent.appendChild(div);
 
 }
