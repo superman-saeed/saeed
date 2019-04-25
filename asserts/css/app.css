@@ -195,7 +195,7 @@ box-sizing: border-box;
 .openbtn{
   display: inline;
   font-size: 30px;
-  left: 10px;
+  right: 10px;
   position: fixed;
   top:10px;
   z-index: 1;
