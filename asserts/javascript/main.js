@@ -4,8 +4,8 @@ close = document.querySelector(".closebtn"),
 navScreen = document.querySelector(".nav"),
 showNav = document.querySelector(".openbtn"),
 loading = document.querySelector(".load"),
-portfolio = document.querySelector(".card-parent");
-
+portfolio = document.querySelector(".portfolio-parent"),
+skills = document.querySelector(".skill-parent");
 
 navSelection(navButtons,navScreen);
 openNav(showNav,navScreen);
@@ -15,7 +15,7 @@ function navSelection(element,nav){
   var highlight = 0;
   element.forEach(function(li,key){
     li.addEventListener("click",function(e){
-      e.preventDefault();
+      //e.preventDefault();
       if (highlight!==key) {
         element[highlight].classList.remove("cliked");
         highlight =key;

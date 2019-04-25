@@ -1,4 +1,3 @@
-projects =[];
  // Initialize Firebase
   var config = {
     apiKey: "AIzaSyD--uEP3zE1Nha53lT-746aGeF0y79LsqQ",
@@ -12,16 +11,17 @@ projects =[];
 
 var database = firebase.firestore();
 
-getData(database,"portfolio");
-// getData(database,"skills");
+
+
+getData(database,"portfolio", portfolio);
+getData(database,"skills",skills);
 // getData(database,"about");
 
-function getData(db,name){
+function getData(db,name, element){
  db.collection(name).get().then(function(querySnapshot) {
     querySnapshot.forEach(function(doc) {
         // doc.data() is never undefined for query doc snapshots
-        card(portfolio ,doc.data().name, doc.data().description, doc.data().url);
-        console.log(doc.id, " => ", doc.data());
+        card(element ,doc.data().name, doc.data().description, doc.data().url);
 
 
     });

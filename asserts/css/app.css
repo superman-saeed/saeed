@@ -113,7 +113,7 @@ box-sizing: border-box;
 
 
   }
-  .card-parent{
+  .portfolio-parent, .skill-parent, .about-parent{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 4px;
@@ -195,9 +195,8 @@ box-sizing: border-box;
 .openbtn{
   display: inline;
   font-size: 30px;
-  margin-left: 8px;
-  float: right;
-  position: sticky;
+  left: 10px;
+  position: fixed;
   top:10px;
   z-index: 1;
 }
