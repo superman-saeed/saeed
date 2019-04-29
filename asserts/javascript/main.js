@@ -31,14 +31,12 @@ function navSelection(element,nav){
 }
 function closeNav(element,nav){
   element.addEventListener("click", function(){
-    console.log("close");
     nav.classList.add("close");
 
   })
 }
 function openNav(element,nav){
   element.addEventListener("click", function(){
-    console.log("open");
     nav.classList.remove("close");
 
   })
@@ -65,6 +63,5 @@ function desc(title,des,url){
   p2.innerText = title.toString();
   span.innerText = des.toString();
   p1.innerText = "Platform :Web application";
-  console.log(a);
   return [p2,span,p1,a];
 }
